@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "593224152347",
+    "project_id": "soap-9b2c2",
+    "storage_bucket": "soap-9b2c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593224152347:android:91f95a9608ed5da52f8fbe",
+        "android_client_info": {
+          "package_name": "com.example.online_admissions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593224152347-dl0f530rsev7radl9biv24cpsu4rur60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.online_admissions",
+            "certificate_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+          }
+        },
+        {
+          "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMiNCEO6KmEolC-E9N7DYPDkLOfHnTj-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593224152347:android:d7db63c8c977e58f2f8fbe",
+        "android_client_info": {
+          "package_name": "com.example.online_admissions2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMiNCEO6KmEolC-E9N7DYPDkLOfHnTj-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593224152347:android:204dc744141db6eb2f8fbe",
+        "android_client_info": {
+          "package_name": "com.example.online_admissions3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMiNCEO6KmEolC-E9N7DYPDkLOfHnTj-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593224152347-4ifgjc3covf1k9le3q9t5gjg74m3o8f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
