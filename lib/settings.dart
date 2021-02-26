@@ -16,7 +16,7 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-         bottomNavigationBar: BottomNavBar(),
+        //  bottomNavigationBar: BottomNavBar(),
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
           title: Text('SETTINGS'),

@@ -38,7 +38,7 @@ class _WelcomeState extends State<Welcome> {
           : Container(
               child: Center(
                 child: Scaffold(
-                  bottomNavigationBar: BottomNavBar(),
+                  // bottomNavigationBar: BottomNavBar(),
                   appBar: AppBar(
                     backgroundColor: Colors.blueGrey[900],
                     title: Text('Welcome'),

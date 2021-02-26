@@ -19,7 +19,7 @@ class _PayForFormState extends State<PayForForm> {
   @override
   Widget build(BuildContext context) {
     final userId = Provider.of<User>(context);
-      final CollectionReference brewCollection =
+      final brewCollection =
       Firestore.instance.collection('payments');
 //.setData(Payment())
 //.collection('payments')
@@ -27,9 +27,10 @@ class _PayForFormState extends State<PayForForm> {
 
     return StreamBuilder<UserData>(
         stream: DatabaseService(uid: userId.uid).userData,
+        // ignore: missing_return
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            UserData userData = snapshot.data;
+            var userData = snapshot.data;
             return Container(
       child: Scaffold(
         appBar: AppBar(
@@ -113,8 +114,8 @@ print('my user id is #');
     'phoneNumber': phoneNum.toString(),   
     'pending': true,   
     'Response': 'Waiting time',   
-    'isSuccessful': true,   
-    'creationTime': Timestamp.now(),   
+    'isSuccessful': true,
+    'creationTime': Timestamp.now(),
  });
                 
               },
