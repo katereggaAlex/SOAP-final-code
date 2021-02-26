@@ -4,12 +4,15 @@ import '../brew.dart';
 import '../user-model.dart';
 
 class DatabaseService {
-  final String uid;
+  
   DatabaseService({this.uid});
-
+final String uid;
   // collection reference
   final CollectionReference brewCollection =
       Firestore.instance.collection('brews');
+      
+  final CollectionReference paymentCollection =
+      Firestore.instance.collection('payments');
 
   Future updateUserData(
     String firstName,

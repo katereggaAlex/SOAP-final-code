@@ -20,7 +20,7 @@ class _EmailConfirmationState extends State<EmailConfirmation> {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.blueGrey[900],
-            title: Text("Email Sent"),
+            title: Text('Email Sent'),
             centerTitle: true,
             actions: [
               IconButton(
@@ -62,7 +62,7 @@ class _EmailConfirmationState extends State<EmailConfirmation> {
                         ),
                         SizedBox(height: 10.0),
                         Text(
-                          "Please follow the instructions in the email.",
+                          'Please follow the instructions in the email.',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             //fontWeight: FontWeight.bold,
@@ -93,7 +93,7 @@ class _EmailConfirmationState extends State<EmailConfirmation> {
                           );
                         },
                         child: Text(
-                          "Back to Login Page",
+                          'Back to Login Page',
                           style: TextStyle(color: Colors.white),
                         ),
                       ),

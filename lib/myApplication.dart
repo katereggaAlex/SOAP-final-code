@@ -18,10 +18,10 @@ class _MyApplicationState extends State<MyApplication> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        // bottomNavigationBar: BottomNavBar(),
+         bottomNavigationBar: BottomNavBar(),
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
-          title: Text("My Application"),
+          title: Text('My Application'),
           centerTitle: true,
           actions: [
             IconButton(
@@ -50,7 +50,7 @@ class _MyApplicationState extends State<MyApplication> {
                     color: Colors.white,
                   ),
                 ),
-                lable: "Review FORM",
+                lable: 'Review FORM',
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ReviewForm()),
@@ -65,7 +65,7 @@ class _MyApplicationState extends State<MyApplication> {
                     color: Colors.white,
                   ),
                 ),
-                lable: "SUBMIT FORM",
+                lable: 'SUBMIT FORM',
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PayForForm()),
@@ -80,7 +80,7 @@ class _MyApplicationState extends State<MyApplication> {
                     color: Colors.white,
                   ),
                 ),
-                lable: "PRINT FORM",
+                lable: 'PRINT FORM',
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PayForForm()),
@@ -92,7 +92,7 @@ class _MyApplicationState extends State<MyApplication> {
                   Icons.edit,
                   color: Colors.white,
                 ),
-                lable: "EDIT FORM",
+                lable: 'EDIT FORM',
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PayForForm()),
@@ -104,7 +104,7 @@ class _MyApplicationState extends State<MyApplication> {
                   Icons.credit_card,
                   color: Colors.white,
                 ),
-                lable: "PAY FOR FORM",
+                lable: 'PAY FOR FORM',
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PayForForm()),
@@ -120,11 +120,13 @@ class _MyApplicationState extends State<MyApplication> {
 }
 
 class MyCustomButton extends StatelessWidget {
+
+  MyCustomButton({this.lable, this.icon, this.onPressed});
+
   final lable;
   final icon;
   final onPressed;
-  MyCustomButton({this.lable, this.icon, this.onPressed});
-
+  
   @override
   Widget build(BuildContext context) {
     return Container(

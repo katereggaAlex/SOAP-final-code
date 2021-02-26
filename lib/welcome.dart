@@ -38,15 +38,15 @@ class _WelcomeState extends State<Welcome> {
           : Container(
               child: Center(
                 child: Scaffold(
-                  // bottomNavigationBar: BottomNavBar(),
+                  bottomNavigationBar: BottomNavBar(),
                   appBar: AppBar(
                     backgroundColor: Colors.blueGrey[900],
-                    title: Text("Welcome"),
+                    title: Text('Welcome'),
                     //centerTitle: true,
                     actions: [
                       FlatButton.icon(
                         label: Text(
-                          "Sign in",
+                          'Sign in',
                           style: TextStyle(color: Colors.white),
                         ),
                         icon: Icon(Icons.person, color: Colors.white),
@@ -77,14 +77,14 @@ class _WelcomeState extends State<Welcome> {
                                   size: 80.0,
                                 ),
                                 Text(
-                                  "Profile Picture",
+                                  'Profile Picture',
                                   style: TextStyle(
                                     color: Colors.blueGrey[900],
                                   ),
                                 ),
                                 SizedBox(height: 10.0),
                                 Text(
-                                  "Create Account",
+                                  'Create Account',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 25,
@@ -93,7 +93,7 @@ class _WelcomeState extends State<Welcome> {
                                 ),
                                 SizedBox(height: 10.0),
                                 Text(
-                                  "All Fields are required",
+                                  'All Fields are required',
                                   style: TextStyle(
                                     fontSize: 18,
                                     color: Colors.blueGrey[900],
@@ -105,7 +105,7 @@ class _WelcomeState extends State<Welcome> {
                                       _val.isEmpty ? 'Enter an email' : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Email",
+                                    hintText: 'Email',
                                   ),
                                   onChanged: (_val) {
                                     setState(() {
@@ -116,10 +116,10 @@ class _WelcomeState extends State<Welcome> {
                                 SizedBox(height: 10.0),
                                 TextFormField(
                                   validator: (_val) =>
-                                      _val.isEmpty ? "Enter Username" : null,
+                                      _val.isEmpty ? 'Enter Username' : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Username",
+                                    hintText: 'Username',
                                   ),
                                   onChanged: (_val) {
                                     setState(() {
@@ -134,7 +134,7 @@ class _WelcomeState extends State<Welcome> {
                                       : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Password",
+                                    hintText: 'Password',
                                   ),
                                   onChanged: (_val) {
                                     setState(() {
@@ -149,7 +149,7 @@ class _WelcomeState extends State<Welcome> {
                                       : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Enter Password Again",
+                                    hintText: 'Enter Password Again',
                                   ),
                                 ),
                               ],
@@ -166,7 +166,7 @@ class _WelcomeState extends State<Welcome> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Text(
-                                "Register",
+                                'Register',
                                 style: TextStyle(color: Colors.white),
                               ),
                               onPressed: () async {
@@ -207,7 +207,7 @@ class _WelcomeState extends State<Welcome> {
                         Row(
                           children: [
                             Text(
-                              "Already created account? ",
+                              'Already created account? ',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.blueGrey[900],
@@ -223,7 +223,7 @@ class _WelcomeState extends State<Welcome> {
                                 );
                               },
                               child: Text(
-                                "Login here",
+                                'Login here',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.redAccent,
@@ -237,7 +237,7 @@ class _WelcomeState extends State<Welcome> {
                           onTap: () async {
                             dynamic result = await _auth.signInAnon();
                             if (result == null) {
-                              print("Error signing in");
+                              print('Error signing in');
                             } else {
                               print('Signed in');
 
@@ -245,7 +245,7 @@ class _WelcomeState extends State<Welcome> {
                             }
                           },
                           child: Text(
-                            "Login Anonymously",
+                            'Login Anonymously',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.redAccent,

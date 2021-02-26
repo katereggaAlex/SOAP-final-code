@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:online_admissions3/services/auth.dart';
 import 'applyNow.dart';
+import 'customButton.dart';
 import 'settings.dart';
-
 import 'BottomNavigationBar.dart';
 import 'myApplication.dart';
 import 'maps_page.dart';
@@ -19,11 +19,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        // bottomNavigationBar: BottomNavBar(),
+        bottomNavigationBar: BottomNavBar(),
         body: Column(
           children: [
             Container(
-              height: 300.0,
+              height: 200.0,
               //color: Colors.blueGrey[900],
               child: Stack(
                 children: [
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                     child: Column(
                       children: [
                         Container(
-                          height: 130.0,
+                          height: 100.0,
                           color: Colors.blueGrey[900],
                         ),
                         Container(
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Positioned(
-                    bottom: 120.0,
+                    bottom: 50.0,
                     //left: 120,
                     width: MediaQuery.of(context).size.width / 1.1,
                     child: Column(
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "lib/assets/images/profile.jpg",
+                          'lib/assets/images/profile.jpg',
                           height: 90,
                           width: 90,
                         ),
@@ -69,119 +69,64 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: 1.0),
-            Container(
-              width: 250,
-              height: 70.0,
-              padding: EdgeInsets.all(10),
-              child: RawMaterialButton(
-                  fillColor: Colors.blueGrey[900],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
+            CustomButton1(
+                label: 'My Application',
+                onPress: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MyApplication(),
+                    ),
+                  );
+                }),
+            CustomButton1(
+              label: 'Apply Now',
+              onPress: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ApplyNow(),
                   ),
-                  child: Text(
-                    "My Application",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MyApplication(),
-                      ),
-                    );
-                  }),
+                );
+              },
             ),
-            Container(
-              width: 250,
-              height: 70.0,
-              padding: EdgeInsets.all(10),
-              child: RawMaterialButton(
-                  fillColor: Colors.blueGrey[900],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
+            CustomButton1(
+              label: 'Find School on map',
+              onPress: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MapsPage(),
                   ),
-                  child: Text(
-                    "Apply Now",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ApplyNow(),
-                      ),
-                    );
-                  }),
+                );
+              },
             ),
-            Container(
-              width: 250,
-              height: 70.0,
-              padding: EdgeInsets.all(10),
-              child: RawMaterialButton(
-                  fillColor: Colors.blueGrey[900],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
+            CustomButton1(
+              label: 'Settings',
+              onPress: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Settings(),
                   ),
-                  child: Text(
-                    "Find School on map",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MapsPage(),
-                      ),
-                    );
-                  }),
+                );
+              },
             ),
-            Container(
-              width: 250,
-              height: 70.0,
-              padding: EdgeInsets.all(10),
-              child: RawMaterialButton(
-                  fillColor: Colors.blueGrey[900],
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: Text(
-                    "Settings",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Settings(),
-                      ),
-                    );
-                  }),
-            ),
-            Container(
-              width: 250,
-              height: 70.0,
-              padding: EdgeInsets.all(10),
-              child: RawMaterialButton(
-                fillColor: Colors.blueGrey[900],
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-                child: Text(
-                  "Logout",
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () async {
-                  // Navigator.pushReplacement(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => HomePage(),
-                  //   ),
-                  // );
+            CustomButton1(
+              label: 'Logout',
+              onPress: () async {
+                // Navigator.pushReplacement(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => HomePage(),
+                //   ),
+                // );
 
-                  await _auth.signOut();
-                },
-              ),
+                await _auth.signOut();
+              },
             ),
+            
+            SizedBox(height: 1.0),
           ],
         ),
       ),

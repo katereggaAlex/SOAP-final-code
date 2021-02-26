@@ -40,12 +40,12 @@ class _LoginState extends State<Login> {
                 resizeToAvoidBottomPadding: true,
                 appBar: AppBar(
                   backgroundColor: Colors.blueGrey[900],
-                  title: Text("Welcome"),
+                  title: Text('Welcome'),
                   //centerTitle: true,
                   actions: [
                     FlatButton.icon(
                       label: Text(
-                        "Sign Up",
+                        'Sign Up',
                         style: TextStyle(color: Colors.white),
                       ),
                       icon: Icon(Icons.person, color: Colors.white),
@@ -92,12 +92,12 @@ class _LoginState extends State<Login> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    "lib/assets/images/logo.jpg",
+                                    'lib/assets/images/logo.jpg',
                                     height: 90,
                                     width: 90,
                                   ),
                                   Text(
-                                    "Apply for School",
+                                    'Apply for School',
                                     style: TextStyle(
                                         color: Colors.blueGrey[900],
                                         fontWeight: FontWeight.bold,
@@ -117,10 +117,10 @@ class _LoginState extends State<Login> {
                           children: [
                             TextFormField(
                               validator: (_val) =>
-                                  _val.isEmpty ? "Enter valid email" : null,
+                                  _val.isEmpty ? 'Enter valid email' : null,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                hintText: "Email",
+                                hintText: 'Email',
                               ),
                               onChanged: (_val) {
                                 setState(() {
@@ -131,11 +131,11 @@ class _LoginState extends State<Login> {
                             SizedBox(height: 10.0),
                             TextFormField(
                               validator: (_val) => _val.length < 6
-                                  ? "Enter a password 6+ characcter long"
+                                  ? 'Enter a password 6+ characcter long'
                                   : null,
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(),
-                                hintText: "Password",
+                                hintText: 'Password',
                               ),
                               onChanged: (_val) {
                                 setState(() {
@@ -156,7 +156,7 @@ class _LoginState extends State<Login> {
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Text(
-                            "Login",
+                            'Login',
                             style: TextStyle(color: Colors.white),
                           ),
                           onPressed: () async {
@@ -205,7 +205,7 @@ class _LoginState extends State<Login> {
                               );
                             },
                             child: Text(
-                              "Create a new account",
+                              'Create a new account',
                               style: TextStyle(
                                 color: Colors.blueGrey[900],
                               ),
@@ -221,7 +221,7 @@ class _LoginState extends State<Login> {
                               );
                             },
                             child: Text(
-                              "Forgot Password?",
+                              'Forgot Password?',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.blueGrey[900],
@@ -242,7 +242,7 @@ class _LoginState extends State<Login> {
                                 });
                               }),
                           Text(
-                            "Remember me",
+                            'Remember me',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.blueGrey[900],

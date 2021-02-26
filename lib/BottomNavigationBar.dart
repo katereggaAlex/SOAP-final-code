@@ -38,21 +38,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
       onTap: onTabTapped, // new
       currentIndex: _currentIndex, // new
       items: [
-        new BottomNavigationBarItem(
+         BottomNavigationBarItem(
           icon: Icon(Icons.home),
-          title: Text('Home', style: TextStyle(color: Colors.blueGrey[900])),
-          backgroundColor: Colors.blueGrey[900],
+          label: 'Home', //style: TextStyle(color: Colors.blueGrey[900]
+          //),
+          //backgroundColor: Colors.blueGrey[900],
           activeIcon: Icon(
             Icons.home,
             color: Colors.blueGrey[900],
           ),
         ),
-        new BottomNavigationBarItem(
+         BottomNavigationBarItem(
           icon: Icon(Icons.mail),
-          title: Text('Application'),
+          label: 'Application',
         ),
-        new BottomNavigationBarItem(
-            icon: Icon(Icons.person), title: Text('Account'))
+         BottomNavigationBarItem(
+            icon: Icon(Icons.person), label: 'Account')
       ],
     );
   }

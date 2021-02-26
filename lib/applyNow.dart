@@ -3,7 +3,7 @@ import 'package:online_admissions3/loading.dart';
 import 'package:provider/provider.dart';
 //import 'package:online_admissions/login.dart';
 //import 'home_page.dart';
-import 'male_female_model.dart';
+//import 'male_female_model.dart';
 import 'services/database.dart';
 import 'user-model.dart';
 import 'welcome.dart';
@@ -87,7 +87,7 @@ class _ApplyNowState extends State<ApplyNow> {
                 child: Scaffold(
                   appBar: AppBar(
                     backgroundColor: Colors.blueGrey[900],
-                    title: Text("HOME"),
+                    title: Text('HOME'),
                     centerTitle: true,
                     actions: [
                       IconButton(
@@ -117,7 +117,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Please choose the level you are applying for.",
+                                    'Please choose the level you are applying for.',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14,
@@ -147,7 +147,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                         });
                                       },
                                       child: Text(
-                                        "PRIMARY",
+                                        'PRIMARY',
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: Colors.blueGrey[100],
@@ -173,7 +173,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                         });
                                       },
                                       child: Text(
-                                        "O LEVEL",
+                                        'O LEVEL',
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: Colors.blueGrey[100],
@@ -199,7 +199,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                         });
                                       },
                                       child: Text(
-                                        "A LEVEL",
+                                        'A LEVEL',
                                         style: TextStyle(
                                           fontSize: 18,
                                           color: Colors.blueGrey[100],
@@ -254,7 +254,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                     alignment: Alignment.topLeft,
                                     child: Text(
-                                        "Please select the school of your choice.")),
+                                        'Please select the school of your choice.')),
                                 SizedBox(height: 10.0),
 
 //===================== SELECT SCHOOL =============================
@@ -299,7 +299,7 @@ class _ApplyNowState extends State<ApplyNow> {
 
                                 SizedBox(height: 10.0),
                                 Text(
-                                  "APPLICATION FOR ADMISSION",
+                                  'APPLICATION FOR ADMISSION',
                                   style: TextStyle(
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold,
@@ -309,7 +309,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "SECTION 1: STUDENTS DETAILS",
+                                    'SECTION 1: STUDENTS DETAILS',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -319,10 +319,10 @@ class _ApplyNowState extends State<ApplyNow> {
                                 TextFormField(
                                   initialValue: userData.firstName,
                                   validator: (_val) =>
-                                      _val.isEmpty ? "Enter valid email" : null,
+                                      _val.isEmpty ? 'Enter valid email' : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "First Name",
+                                    hintText: 'First Name',
                                   ),
                                   onChanged: (_val) {
                                     _firstName = _val.toString();
@@ -332,11 +332,11 @@ class _ApplyNowState extends State<ApplyNow> {
                                 TextFormField(
                                   initialValue: userData.middleName,
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid Middle name"
+                                      ? 'Enter valid Middle name'
                                       : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Middle Name",
+                                    hintText: 'Middle Name',
                                   ),
                                   onChanged: (_val) {
                                     _middleName = _val.toString();
@@ -346,11 +346,11 @@ class _ApplyNowState extends State<ApplyNow> {
                                 TextFormField(
                                   initialValue: userData.lastName,
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid Last Name"
+                                      ? 'Enter valid Last Name'
                                       : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Last Name",
+                                    hintText: 'Last Name',
                                   ),
                                   onChanged: (_val) {
                                     _lastName = _val.toString();
@@ -359,7 +359,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 SizedBox(height: 10.0),
                                 Container(
                                   alignment: Alignment.topLeft,
-                                  child: Text("Date of Birth*"),
+                                  child: Text('Date of Birth*'),
                                 ),
                                 SizedBox(height: 10.0),
                                 Container(
@@ -374,7 +374,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                       ),
                                   child: ListTile(
                                     title: Text(
-                                      "12 May 1998",
+                                      '12 May 1998',
                                       style: TextStyle(
                                         color: Colors.blueGrey[900],
                                       ),
@@ -389,7 +389,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Gender*",
+                                    'Gender*',
                                     style: TextStyle(
                                       color: Colors.red,
                                     ),
@@ -403,28 +403,28 @@ class _ApplyNowState extends State<ApplyNow> {
                                       Expanded(
                                         child: RadioListTile(
                                             value: 1,
-                                            title: Text("Male"),
+                                            title: Text('Male'),
                                             groupValue: _male_female,
                                             onChanged: (_value) {
                                               setState(() {
                                                 print(_value);
 
                                                 _male_female = _value;
-                                                _gender = "male";
+                                                _gender = 'male';
                                               });
                                             }),
                                       ),
                                       Expanded(
                                         child: RadioListTile(
                                             value: 2,
-                                            title: Text("Female"),
+                                            title: Text('Female'),
                                             groupValue: _male_female,
                                             onChanged: (_value) {
                                               setState(() {
                                                 print(_value);
 
                                                 _male_female = _value;
-                                                _gender = "female";
+                                                _gender = 'female';
                                               });
                                             }),
                                       ),
@@ -433,12 +433,12 @@ class _ApplyNowState extends State<ApplyNow> {
                                 ),
                                 TextFormField(
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid address"
+                                      ? 'Enter valid address'
                                       : null,
                                   initialValue: userData.address,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Address",
+                                    hintText: 'Address',
                                   ),
                                   onChanged: (_val) {
                                     _address = _val;
@@ -447,12 +447,12 @@ class _ApplyNowState extends State<ApplyNow> {
                                 SizedBox(height: 10.0),
                                 TextFormField(
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid Nationality"
+                                      ? 'Enter valid Nationality'
                                       : null,
                                   initialValue: userData.nationality,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Nationality",
+                                    hintText: 'Nationality',
                                   ),
                                   onChanged: (_val) {
                                     _nationality = _val.toString();
@@ -461,12 +461,12 @@ class _ApplyNowState extends State<ApplyNow> {
                                 SizedBox(height: 10.0),
                                 TextFormField(
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid country of residence"
+                                      ? 'Enter valid country of residence'
                                       : null,
                                   initialValue: userData.residence,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Country of residence",
+                                    hintText: 'Country of residence',
                                   ),
                                   onChanged: (_val) {
                                     _residence = _val.toString();
@@ -476,10 +476,10 @@ class _ApplyNowState extends State<ApplyNow> {
                                 TextFormField(
                                   initialValue: userData.email,
                                   validator: (_val) =>
-                                      _val.isEmpty ? "Enter valid email" : null,
+                                      _val.isEmpty ? 'Enter valid email' : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Student E-mail",
+                                    hintText: 'Student E-mail',
                                   ),
                                   onChanged: (_val) {
                                     _email = _val.toString();
@@ -489,11 +489,11 @@ class _ApplyNowState extends State<ApplyNow> {
                                 TextFormField(
                                   initialValue: userData.mobileNum,
                                   validator: (_val) => _val.isEmpty
-                                      ? "Enter valid Mob Num"
+                                      ? 'Enter valid Mob Num'
                                       : null,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Mobile Number",
+                                    hintText: 'Mobile Number',
                                   ),
                                   onChanged: (_val) {
                                     _mobileNum = _val.toString();
@@ -502,7 +502,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 SizedBox(height: 10.0),
                                 Container(
                                   alignment: Alignment.topLeft,
-                                  child: Text("Any kind of disablity"),
+                                  child: Text('Any kind of disablity'),
                                 ),
                                 Row(
                                   children: [
@@ -516,7 +516,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                             });
                                           },
                                         ),
-                                        Text("NO"),
+                                        Text('NO'),
                                       ],
                                     ),
                                     Row(
@@ -530,7 +530,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                             });
                                           },
                                         ),
-                                        Text("Yes"),
+                                        Text('Yes'),
                                       ],
                                     ),
                                   ],
@@ -539,7 +539,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.disability,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "if yes, mention it",
+                                    hintText: 'if yes, mention it',
                                   ),
                                   onChanged: (_val) {
                                     _disability = _val.toString();
@@ -549,7 +549,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "SECTION 2: PARENTS DETAILS",
+                                    'SECTION 2: PARENTS DETAILS',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -560,7 +560,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_name,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Full Name",
+                                    hintText: 'Full Name',
                                   ),
                                   onChanged: (_val) {
                                     _parent_name = _val;
@@ -571,7 +571,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_email,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Email",
+                                    hintText: 'Email',
                                   ),
                                   onChanged: (_val) {
                                     _parent_email = _val.toString();
@@ -581,7 +581,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Contact details",
+                                    'Contact details',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -592,7 +592,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_phone1,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Phone # 1",
+                                    hintText: 'Phone # 1',
                                   ),
                                   onChanged: (_val) {
                                     _parent_phone1 = _val.toString();
@@ -603,7 +603,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_phone2,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Phone # 2",
+                                    hintText: 'Phone # 2',
                                   ),
                                   onChanged: (_val) {
                                     _parent_phone2 = _val.toString();
@@ -613,7 +613,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Address",
+                                    'Address',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -624,7 +624,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_city,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "City",
+                                    hintText: 'City',
                                   ),
                                   onChanged: (_val) {
                                     _parent_city = _val.toString();
@@ -635,14 +635,14 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_country,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Country",
+                                    hintText: 'Country',
                                   ),
                                 ),
                                 SizedBox(height: 10.0),
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "NIN Number",
+                                    'NIN Number',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -653,7 +653,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_nin,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "NIN Number",
+                                    hintText: 'NIN Number',
                                   ),
                                   onChanged: (_val) {
                                     _parent_nin = _val.toString();
@@ -663,7 +663,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Nationality",
+                                    'Nationality',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -674,7 +674,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.parent_nationality,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Nationality",
+                                    hintText: 'Nationality',
                                   ),
                                   onChanged: (_val) {
                                     _parent_nationality = _val;
@@ -684,7 +684,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "SECTION 3: FORMER SCHOOL DETAILS",
+                                    'SECTION 3: FORMER SCHOOL DETAILS',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -695,7 +695,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.former_school,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Former schoold name*",
+                                    hintText: 'Former schoold name*',
                                   ),
                                   onChanged: (_val) {
                                     _former_school = _val;
@@ -706,7 +706,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                   initialValue: userData.former_class,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
-                                    hintText: "Class*",
+                                    hintText: 'Class*',
                                   ),
                                   onChanged: (_val) {
                                     _former_class = _val.toString();
@@ -716,7 +716,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 Container(
                                   alignment: Alignment.topLeft,
                                   child: Text(
-                                    "Performance (grade or points)*",
+                                    'Performance (grade or points)*',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -735,7 +735,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                       )),
                                       child: Row(
                                         children: [
-                                          Text("Grade"),
+                                          Text('Grade'),
                                           SizedBox(width: 50.0),
                                           Icon(Icons.arrow_drop_down),
                                         ],
@@ -752,7 +752,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                       )),
                                       child: Row(
                                         children: [
-                                          Text("Points"),
+                                          Text('Points'),
                                           SizedBox(width: 50.0),
                                           Icon(Icons.arrow_drop_down),
                                         ],
@@ -762,7 +762,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                 ),
                                 SizedBox(height: 5.0),
                                 Text(
-                                  "\u26A0 Note: A copy of your previous report will be needed.",
+                                  '\u26A0 Note: A copy of your previous report will be needed.',
                                   style: TextStyle(color: Colors.blue[900]),
                                 ),
                                 SizedBox(height: 15.0),
@@ -776,7 +776,7 @@ class _ApplyNowState extends State<ApplyNow> {
                                           });
                                         }),
                                     Text(
-                                      "I accept and agree with terms \nand conditions.",
+                                      'I accept and agree with terms \nand conditions.',
                                       style: TextStyle(color: Colors.red[900]),
                                     ),
                                   ],
@@ -824,13 +824,13 @@ class _ApplyNowState extends State<ApplyNow> {
                                 color: Colors.white,
                               ),
                               label: Text(
-                                "SAVE FORM",
+                                'SAVE FORM',
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
                           Text(
-                            "Already created account? Login here",
+                            'Already created account? Login here',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.blueGrey[900],

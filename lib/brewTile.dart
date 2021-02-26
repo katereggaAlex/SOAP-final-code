@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'brew.dart';
 
 class BrewTile extends StatelessWidget {
-  final Brew brew;
-  BrewTile({this.brew});
 
+  BrewTile({this.brew});
+  final Brew brew;
+  
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -1,6 +1,7 @@
-class Gender_model {
+class Gendermodel {
   final String male;
   final String female;
 
-  Gender_model({this.male, this.female});
+  // ignore: sort_constructors_first
+  Gendermodel({this.male, this.female});
 }

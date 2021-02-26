@@ -22,7 +22,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.blueGrey[900],
-            title: Text("Forget Password"),
+            title: Text('Forget Password'),
             centerTitle: true,
             actions: [
               IconButton(
@@ -52,7 +52,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       ),
                       SizedBox(height: 10.0),
                       Text(
-                        "Forget Password?",
+                        'Forget Password?',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25,
@@ -61,7 +61,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       ),
                       SizedBox(height: 10.0),
                       Text(
-                        "We just your registered email to send your password reset link",
+                        'We just your registered email to send your password reset link',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           //fontWeight: FontWeight.bold,
@@ -73,7 +73,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                       TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
-                          hintText: "Type your Email",
+                          hintText: 'Type your Email',
                         ),
                       ),
                     ],
@@ -102,7 +102,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                         child: Icon(Icons.send, color: Colors.white),
                       ),
                       label: Text(
-                        "SEND",
+                        'SEND',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -112,7 +112,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    "Already created account? Login here",
+                    'Already created account? Login here',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.blueGrey[900],

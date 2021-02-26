@@ -16,10 +16,10 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        // bottomNavigationBar: BottomNavBar(),
+         bottomNavigationBar: BottomNavBar(),
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
-          title: Text("SETTINGS"),
+          title: Text('SETTINGS'),
           centerTitle: true,
           actions: [
             IconButton(
@@ -44,16 +44,16 @@ class _SettingsState extends State<Settings> {
                 child: Row(
                   children: [
                     Expanded(
-                        child: Image.asset("lib/assets/images/profile.jpg")),
+                        child: Image.asset('lib/assets/images/profile.jpg')),
                     Container(
                       height: 140,
                       child: Column(
                         children: [
                           Expanded(
-                            child: MyCustomButton(lable: "EDIT PROFILE PHOTO"),
+                            child: MyCustomButton(lable: 'EDIT PROFILE PHOTO'),
                           ),
                           Expanded(
-                            child: MyCustomButton(lable: "EDIT PROFILE NAME"),
+                            child: MyCustomButton(lable: 'EDIT PROFILE NAME'),
                           ),
                         ],
                       ),
@@ -61,11 +61,11 @@ class _SettingsState extends State<Settings> {
                   ],
                 ),
               ),
-              MyCustomButton(lable: "Change Theme Color"),
-              MyCustomButton(lable: "Change Password"),
-              MyCustomButton(lable: "Change Font Style"),
-              MyCustomButton(lable: "Help"),
-              MyCustomButton(lable: "Invite Friend"),
+              MyCustomButton(lable: 'Change Theme Color'),
+              MyCustomButton(lable: 'Change Password'),
+              MyCustomButton(lable: 'Change Font Style'),
+              MyCustomButton(lable: 'Help'),
+              MyCustomButton(lable: 'Invite Friend'),
               Expanded(
                 child: SizedBox(
                   height: 10.0,
@@ -80,9 +80,10 @@ class _SettingsState extends State<Settings> {
 }
 
 class MyCustomButton extends StatelessWidget {
-  final lable;
+  
 
   MyCustomButton({this.lable});
+final lable;
 
   @override
   Widget build(BuildContext context) {

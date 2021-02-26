@@ -36,7 +36,7 @@ class _MapsPageState extends State<MapsPage> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blueGrey[900],
-          title: Text("Find your school"),
+          title: Text('Find your school'),
           centerTitle: true,
           actions: [
             IconButton(

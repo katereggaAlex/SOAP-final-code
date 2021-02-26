@@ -20,12 +20,12 @@ class ReviewForm extends StatelessWidget {
           return Scaffold(
               appBar: AppBar(
                 backgroundColor: Colors.blueGrey[900],
-                title: Text("Review Form"),
+                title: Text('Review Form'),
                 //centerTitle: true,
                 actions: [
                   FlatButton.icon(
                     label: Text(
-                      "HOME",
+                      'HOME',
                       style: TextStyle(color: Colors.white),
                     ),
                     icon: Icon(Icons.home, color: Colors.white),
