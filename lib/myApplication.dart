@@ -7,6 +7,7 @@ import 'dart:math' as math;
 import 'payForForm.dart';
 import 'reviewForm.dart';
 import 'welcome.dart';
+import 'applyNow.dart';
 
 class MyApplication extends StatefulWidget {
   @override
@@ -83,7 +84,7 @@ class _MyApplicationState extends State<MyApplication> {
                 lable: 'PRINT FORM',
                 onPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => PayForForm()),
+                    MaterialPageRoute(builder: (context) => ReviewForm()),
                   );
                 },
               ),
@@ -95,7 +96,7 @@ class _MyApplicationState extends State<MyApplication> {
                 lable: 'EDIT FORM',
                 onPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => PayForForm()),
+                    MaterialPageRoute(builder: (context) => ApplyNow()),
                   );
                 },
               ),
