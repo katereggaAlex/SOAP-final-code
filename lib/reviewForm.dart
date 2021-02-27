@@ -45,32 +45,32 @@ class ReviewForm extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Text('firstName ' + snapshot.data.firstName.toString()),
-                    Text('middleName ' + snapshot.data.middleName.toString()),
-                    Text('lastName ' + snapshot.data.lastName.toString()),
-                    Text('address ' + snapshot.data.address.toString()),
-                    Text('nationality ' + snapshot.data.nationality.toString()),
-                    Text('residence ' + snapshot.data.residence.toString()),
-                    Text('email ' + snapshot.data.email.toString()),
-                    Text('mobileNum ' + snapshot.data.mobileNum.toString()),
-                    Text('disability ' + snapshot.data.disability.toString()),
-                    Text('gender ' + snapshot.data.gender.toString()),
-                    Text('parent name ' + snapshot.data.parent_name.toString()),
-                    Text('parent email ' +
+                    Text('FIRSTNAME ' + snapshot.data.firstName.toString()),
+                    Text('MIDDLENAME ' + snapshot.data.middleName.toString()),
+                    Text('LASTNAME ' + snapshot.data.lastName.toString()),
+                    Text('ADDRESS ' + snapshot.data.address.toString()),
+                    Text('NATIONALITY ' + snapshot.data.nationality.toString()),
+                    Text('RESIDENCE ' + snapshot.data.residence.toString()),
+                    Text('EMAIL ' + snapshot.data.email.toString()),
+                    Text('MOBILENUMBER ' + snapshot.data.mobileNum.toString()),
+                    Text('DISABILITY ' + snapshot.data.disability.toString()),
+                    Text('GENDER ' + snapshot.data.gender.toString()),
+                    Text('PARENT NAME ' + snapshot.data.parent_name.toString()),
+                    Text('PARENT EMAIL ' +
                         snapshot.data.parent_email.toString()),
-                    Text('parent phone1 ' +
+                    Text('PARENT PHONE 1 ' +
                         snapshot.data.parent_phone1.toString()),
-                    Text('parent phone2 ' +
+                    Text('PARENT PHONE 2 ' +
                         snapshot.data.parent_phone2.toString()),
                     Text('parent city ' + snapshot.data.parent_city.toString()),
-                    Text('parent country ' +
+                    Text('PARENT COUNTRY ' +
                         snapshot.data.parent_country.toString()),
-                    Text('parent nin ' + snapshot.data.parent_nin.toString()),
-                    Text('parent nationality ' +
+                    Text('PARENT NIN ' + snapshot.data.parent_nin.toString()),
+                    Text('PARENT NATIONALITY ' +
                         snapshot.data.parent_nationality.toString()),
-                    Text('former school ' +
+                    Text('fFORMER SCHOOL ' +
                         snapshot.data.former_school.toString()),
-                    Text('former class ' +
+                    Text('FORMER SCHOOL ' +
                         snapshot.data.former_class.toString()),
                   ],
                 ),
