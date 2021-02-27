@@ -62,13 +62,13 @@ class ReviewForm extends StatelessWidget {
                         snapshot.data.parent_phone1.toString()),
                     Text('PARENT PHONE 2 ' +
                         snapshot.data.parent_phone2.toString()),
-                    Text('parent city ' + snapshot.data.parent_city.toString()),
+                    Text('PARENT CITY ' + snapshot.data.parent_city.toString()),
                     Text('PARENT COUNTRY ' +
                         snapshot.data.parent_country.toString()),
                     Text('PARENT NIN ' + snapshot.data.parent_nin.toString()),
                     Text('PARENT NATIONALITY ' +
                         snapshot.data.parent_nationality.toString()),
-                    Text('fFORMER SCHOOL ' +
+                    Text('FORMER SCHOOL ' +
                         snapshot.data.former_school.toString()),
                     Text('FORMER SCHOOL ' +
                         snapshot.data.former_class.toString()),
