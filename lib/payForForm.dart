@@ -99,13 +99,14 @@ class _PayForFormState extends State<PayForForm> {
 
                         CustomButton1(
               label: 'Pay Now',
-              onPress: () async {
-                // Navigator.pushReplacement(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => HomePage(),
-                //   ),
-                // );
+              onPressed: (){
+                Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                builder: (context) => Loading(),
+                 ),
+                 );
+              },
 print('my user id is #');
  await brewCollection.document(userId.uid).setData({
     'name' : userData.firstName.toString(),
